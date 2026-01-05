@@ -1,0 +1,145 @@
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Tema warna: hitam, merah, kuning, putih */
+.bg-black { background-color: #000 !important; }
+.text-danger { color: #c40000 !important; }
+.border-danger { border-color: #c40000 !important; }
+.border-warning { border-color: #ffcc00 !important; }
+.bg-warning { background-color: #ffcc00 !important; }
+.btn-warning { background-color: #ffcc00; border-color: #ffcc00; color: #000; }
+.btn-danger { background-color: #c40000; border-color: #c40000; }
+.btn-outline-danger { color: #c40000; border-color: #c40000; }
+.btn-outline-danger:hover { background-color: #c40000; color: #fff; }
+.navbar-dark.bg-dark { background-color: #000 !important; }
+.navbar-gradient {
+    background: linear-gradient(90deg, #000 0%, #c40000 50%, #ffcc00 100%) !important;
+}
+.navbar .navbar-brand {
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #fff !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.navbar .navbar-brand .brand-logo {
+    height: 34px;
+    width: auto;
+    margin-right: 10px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.navbar-gradient .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-gradient .navbar-nav .nav-link:hover,
+.navbar-gradient .navbar-nav .nav-link:focus {
+    color: #fff !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.card {
+    border-radius: .6rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+.section-title {
+    border-left: 6px solid #c40000;
+    padding-left: 12px;
+    margin-bottom: 1rem;
+}
+.card-header { font-weight: 600; }
