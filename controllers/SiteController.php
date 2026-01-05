@@ -104,9 +104,22 @@ class SiteController extends Controller
                 'images' => $images,
             ];
         }
+        $achModels = Achievement::find()->orderBy(['created_at' => SORT_DESC])->limit(3)->all();
+        $achievements = [];
+        foreach ($achModels as $m) {
+            $images = array_values(array_filter([$m->image1, $m->image2, $m->image3]));
+            $achievements[] = [
+                'id' => (string)$m->id,
+                'title' => $m->title,
+                'achiever' => $m->achiever,
+                'description' => $m->description,
+                'images' => $images,
+            ];
+        }
         return $this->render('index', [
             'profile' => $profile,
             'news' => $news,
+            'achievements' => $achievements,
         ]);
     }
 
